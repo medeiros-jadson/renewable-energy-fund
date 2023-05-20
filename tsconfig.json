@@ -55,11 +55,12 @@
   ],
   "include": [
     ".eslintrc.js",
+    ".lintstagedrc.js",
     ".prettierrc.js",
     "babel.config.js",
+    "commitlint.config.js",
     "metro.config.js",
     "jest.config.js",
-    "shim.js",
     "index.js",
     "src/**/*"
   ],
