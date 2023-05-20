@@ -52,7 +52,7 @@
       "*": ["src/utils/@types/*.ts"],
       "~/components": ["src/components"],
       "~/core": ["src/core"],
-      "~/modules": ["src/modules"],
+      "~/libs": ["src/libs"],
       "~/scenes": ["src/scenes"],
       "~/utils": ["src/utils"],
     },
