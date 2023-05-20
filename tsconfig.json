@@ -48,10 +48,17 @@
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "paths": {}
+    "paths": {
+      "*": ["src/utils/@types/*.ts"],
+      "~/components": ["src/components"],
+      "~/core": ["src/core"],
+      "~/modules": ["src/modules"],
+      "~/scenes": ["src/scenes"],
+      "~/utils": ["src/utils"],
+    },
   },
   "types": [
-    ""
+    "src/utils/@types/*"
   ],
   "include": [
     ".eslintrc.js",
