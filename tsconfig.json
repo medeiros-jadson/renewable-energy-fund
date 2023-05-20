@@ -49,7 +49,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "paths": {
-      "*": ["src/utils/@types/*.ts"],
+      "*": ["src/utils/types/*.ts"],
       "~/components": ["src/components"],
       "~/core": ["src/core"],
       "~/libs": ["src/libs"],
@@ -58,7 +58,7 @@
     },
   },
   "types": [
-    "src/utils/@types/*"
+    "src/utils/types/*"
   ],
   "include": [
     ".eslintrc.js",
