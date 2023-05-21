@@ -1,0 +1,20 @@
+name: Code Validations
+
+on: pull_request
+
+jobs:
+  check:
+    if: startsWith(github.head_ref, 'dependabot/') == false
+    name: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Install Dependencies
+        run: yarn install
+      - name: TypeScript Check
+        run: tsc
+      - name: Lint Check
+        run: yarn lint:fix
