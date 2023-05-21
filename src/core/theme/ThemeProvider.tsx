@@ -1,5 +1,5 @@
 import React from 'react';
-import { themeSelector } from '~/core/stores/theme/slectors';
+import { themeSelector } from '~/core/stores/theme/selectors';
 import { ThemeProvider, useSelector } from '~/libs';
 
 type Props = {

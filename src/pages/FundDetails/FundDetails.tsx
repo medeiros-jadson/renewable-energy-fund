@@ -2,7 +2,7 @@ import React from 'react';
 import { Dimensions } from 'react-native';
 import { useSelector } from 'react-redux';
 import { ImageCard } from '~/components';
-import { themeSelector } from '~/core/stores/theme/slectors';
+import { themeSelector } from '~/core/stores/theme/selectors';
 import {
   BreakdownSection,
   BreakdownTitle,
