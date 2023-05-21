@@ -2,7 +2,7 @@ import { PayloadAction, PersistReducer, createSlice } from '~/libs';
 import { PERSIST_KEYS } from '~/utils';
 
 import { getPersistConfig } from '../root.service';
-import { getUserData } from './thunks';
+import { getUserStored, registerUser } from './thunks';
 
 const initialState: UserState = {
   firstName: '',
@@ -25,16 +25,27 @@ const userSlice = createSlice({
     },
   },
   extraReducers: (builder) =>
-    builder.addCase(
-      getUserData.fulfilled,
-      (state, { payload }: PayloadAction<UserState>) => {
-        state.firstName = payload.firstName;
-        state.lastName = payload.lastName;
-        state.email = payload.email;
-        state.password = payload.password;
-        state.isOverEighteen = payload.isOverEighteen;
-      },
-    ),
+    builder
+      .addCase(
+        getUserStored.fulfilled,
+        (state, { payload }: PayloadAction<UserState>) => {
+          state.firstName = payload.firstName;
+          state.lastName = payload.lastName;
+          state.email = payload.email;
+          state.password = payload.password;
+          state.isOverEighteen = payload.isOverEighteen;
+        },
+      )
+      .addCase(
+        registerUser.fulfilled,
+        (state, { payload }: PayloadAction<UserState>) => {
+          state.firstName = payload.firstName;
+          state.lastName = payload.lastName;
+          state.email = payload.email;
+          state.password = payload.password;
+          state.isOverEighteen = payload.isOverEighteen;
+        },
+      ),
 });
 
 export const { setUser } = userSlice.actions;

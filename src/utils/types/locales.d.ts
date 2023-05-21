@@ -19,4 +19,6 @@ declare type Locales = {
   and: string;
   privacyPolicy: string;
   ok: string;
+  registrationMadeSuccessfully: string;
+  userNotFound: string;
 };

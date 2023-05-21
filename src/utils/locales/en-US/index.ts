@@ -19,4 +19,6 @@ export default {
   and: 'and',
   privacyPolicy: 'Privacy policy',
   ok: 'Ok',
+  registrationMadeSuccessfully: 'Registration made successfully!',
+  userNotFound: 'User not found!',
 } as Locales;

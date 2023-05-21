@@ -1,12 +1,12 @@
 import { I18n } from '~/libs';
-import ptBR from './pt-BR';
+import enUS from './en-US';
 
 const translations = new I18n({
-  'pt-BR': ptBR,
+  en: enUS,
 });
 
-translations.defaultLocale = 'pt-BR';
-translations.locale = 'pt-BR';
+translations.defaultLocale = 'en';
+translations.locale = 'en';
 
 export const translate = (
   key: keyof Locales,

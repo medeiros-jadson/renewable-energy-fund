@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollView } from 'react-native';
 import { SAFE_AREA_VIEW_EDGES } from '~/utils';
 import { PageHeader } from './components';
 import { ContentWrapper, Wrapper } from './styles';
@@ -21,15 +22,17 @@ const PageWrapper: React.FC<Props> = ({
   customHeaderComponent,
 }) => (
   <Wrapper edges={[SAFE_AREA_VIEW_EDGES.TOP]}>
-    {customHeaderComponent || (
-      <PageHeader
-        title={title}
-        subtitle={subtitle}
-        showBackButton={showBackButton}
-        suppressTitle={suppressTitle}
-      />
-    )}
-    <ContentWrapper>{children}</ContentWrapper>
+    <ScrollView>
+      {customHeaderComponent || (
+        <PageHeader
+          title={title}
+          subtitle={subtitle}
+          showBackButton={showBackButton}
+          suppressTitle={suppressTitle}
+        />
+      )}
+      <ContentWrapper>{children}</ContentWrapper>
+    </ScrollView>
   </Wrapper>
 );
 

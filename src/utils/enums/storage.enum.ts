@@ -1,0 +1,3 @@
+export enum STORAGE_KEYS {
+  STORED_USER = 'STORED_USER',
+}
