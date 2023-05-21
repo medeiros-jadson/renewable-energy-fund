@@ -63,15 +63,15 @@
       "type": "spacing"
     },
     "xl": {
-      "value": 25,
+      "value": 20,
       "type": "spacing"
     },
     "xxl": {
-      "value": 28,
+      "value": 25,
       "type": "spacing"
     },
     "max": {
-      "value": 72,
+      "value": 38,
       "type": "spacing"
     }
   },
@@ -249,11 +249,11 @@
       "type": "fontSizes"
     },
     "lg": {
-      "value": 18,
+      "value": 17,
       "type": "fontSizes"
     },
     "xl": {
-      "value": 20,
+      "value": 18,
       "type": "fontSizes"
     },
     "xxl": {
@@ -454,7 +454,7 @@
         "type": "color"
       },
       "700": {
-        "value": "#2E2E2E",
+        "value": "#808080",
         "type": "color"
       },
       "900": {

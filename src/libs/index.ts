@@ -38,6 +38,6 @@ export {
 } from '@react-navigation/native';
 export { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 export { createNativeStackNavigator } from '@react-navigation/native-stack';
-export { SafeAreaProvider } from 'react-native-safe-area-context';
+export { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 export { I18n, Locales, MissingTranslation, Pluralization } from 'i18n-js';
 export { SvgXml } from 'react-native-svg';
