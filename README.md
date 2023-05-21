@@ -1,67 +1,67 @@
 # RenewableEnergyFund
 
-Este é um aplicativo desenvolvido com o React Native, projetado para ajudar na gestão e investimento em energias renováveis.
+This is an application developed with React Native, designed to aid in the management and investment in renewable energies.
 
-## Iniciando 🚀
+## Getting Started 🚀
 
-Estas instruções irão permitir que você obtenha uma cópia do projeto em funcionamento na sua máquina local para desenvolvimento e teste.
+These instructions will allow you to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Pré-requisitos 📋
+### Prerequisites 📋
 
-Você precisa ter o Node.js, npm e React Native CLI instalados em sua máquina. 
+You need to have Node.js, npm, and React Native CLI installed on your machine.
 
 ```
 npm install -g react-native-cli
 ```
 
-### Instalação 🔧
+### Installation 🔧
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```
-git clone https://github.com/seu-usuario/RenewableEnergyFund.git
+git clone https://github.com/your-username/RenewableEnergyFund.git
 ```
 
-2. Entre no diretório do projeto:
+2. Navigate into the project directory:
 
 ```
 cd RenewableEnergyFund
 ```
 
-3. Instale as dependências:
+3. Install the dependencies:
 
 ```
 npm install
 ```
 
-ou 
+or
 
 ```
 yarn install
 ```
 
-## Scripts do Projeto
+## Project Scripts
 
-- `npm run commit` para commitar usando o Conventional Commits.
-- `npm run postinstall` para realizar ajustes após a instalação dos pacotes.
-- `npm run clean:android` para limpar o build do Android.
-- `npm run android` para rodar o app no Android.
-- `npm run ios` para rodar o app no iOS.
-- `npm run lint` para rodar o ESLint.
-- `npm run start` para iniciar o servidor de desenvolvimento do React Native.
-- `npm run test` para rodar os testes com Jest.
-- `npm run lint:check` para rodar o linter e verificar problemas.
-- `npm run lint:fix` para corrigir automaticamente problemas identificados pelo linter.
-- `npm run pretty:check` para verificar a formatação dos arquivos com Prettier.
-- `npm run pretty:write` para formatar os arquivos com Prettier.
-- `npm run generate:component` para gerar um novo componente.
-- `npm run generate:page` para gerar uma nova página.
+- `npm run commit` to commit using Conventional Commits.
+- `npm run postinstall` to perform adjustments after package installation.
+- `npm run clean:android` to clean the Android build.
+- `npm run android` to run the app on Android.
+- `npm run ios` to run the app on iOS.
+- `npm run lint` to run ESLint.
+- `npm run start` to start the React Native development server.
+- `npm run test` to run tests with Jest.
+- `npm run lint:check` to run the linter and check for problems.
+- `npm run lint:fix` to automatically fix issues identified by the linter.
+- `npm run pretty:check` to check file formatting with Prettier.
+- `npm run pretty:write` to format files with Prettier.
+- `npm run generate:component` to generate a new component.
+- `npm run generate:page` to generate a new page.
 
-## Executando os testes ⚙️
+## Running the tests ⚙️
 
-Execute `npm run test` para rodar os testes. Os testes serão executados com o Jest.
+Run `npm run test` to run the tests. The tests will be executed with Jest.
 
-## Desenvolvido com 🛠️
+## Built With 🛠️
 
 - [React Native](https://reactnative.dev/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -75,12 +75,12 @@ Execute `npm run test` para rodar os testes. Os testes serão executados com o J
 - [Jest](https://jestjs.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## Autores ✒️
+## Authors ✒️
 
-- **Jadson Medeiros** - *Trabalho Inicial* - [medeiros-jadson](https://github.com/medeiros-jadson)
+- **Jadson Medeiros** - _Initial Work_ - [medeiros-jadson](https://github.com/medeiros-jadson)
 
-Veja também a lista de [contribuidores](https://github.com/seu-usuario/RenewableEnergyFund/contributors) que participaram deste projeto.
+See also the list of [contributors](https://github.com/your-username/RenewableEnergyFund/contributors) who participated in this project.
 
 ---
 
-Feito com ❤️ por [Seu nome](https://github.com/seu-usuario/) 💪
+Made with ❤️ by [Jadson Medeiros](https://github.com/medeiros-jadson/) 💪
