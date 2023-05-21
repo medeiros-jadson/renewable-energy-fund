@@ -1,12 +1,18 @@
 const { ROUTES, MODALS } = Modules;
 
-declare type PrivateStackParams = {
+declare type HomeStackParams = {
   [ROUTES.HOME]: undefined;
-  [ROUTES.TRADE]: {
+  [ROUTES.FUND_DETAILS]: {
     params: {
       data?: unknown;
     };
   };
+};
+
+declare type PrivateStackParams = {
+  [ROUTES.HOME_TAB]: undefined;
+  [ROUTES.TRADE_TAB]: undefined;
+  [ROUTES.PORTIFOLIO_TAB]: undefined;
 };
 
 declare type PublicStackParams = {

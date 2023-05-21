@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { createNativeStackNavigator } from '~/libs';
 import * as Pages from '~/pages';
 import { ROUTES } from '../enums';
@@ -9,7 +9,7 @@ const PublicStack = (): JSX.Element => (
   <Public.Navigator
     initialRouteName={ROUTES.SIGN_IN}
     screenOptions={{
-      header: () => <Fragment />,
+      header: () => <></>,
     }}
   >
     <Public.Screen name={ROUTES.SIGN_IN} component={Pages.SignIn} />

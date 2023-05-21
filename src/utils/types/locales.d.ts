@@ -21,4 +21,7 @@ declare type Locales = {
   ok: string;
   registrationMadeSuccessfully: string;
   userNotFound: string;
+  home: string;
+  trade: string;
+  portifolio: string;
 };

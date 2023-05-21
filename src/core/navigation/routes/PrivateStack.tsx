@@ -1,19 +1,23 @@
-import React, { Fragment } from 'react';
-import { createNativeStackNavigator } from '~/libs';
+import React from 'react';
+import { BottomTab } from '~/components';
+import { createBottomTabNavigator } from '~/libs';
 import * as Pages from '~/pages';
 import { ROUTES } from '../enums';
+import HomeStack from './HomeStack';
 
-const Private = createNativeStackNavigator<PrivateStackParams>();
+const Private = createBottomTabNavigator<PrivateStackParams>();
 
 const PrivateStack = (): JSX.Element => (
   <Private.Navigator
-    initialRouteName={ROUTES.HOME}
+    initialRouteName={ROUTES.HOME_TAB}
+    tabBar={(props) => <BottomTab props={props} />}
     screenOptions={{
-      header: () => <Fragment />,
+      header: () => <></>,
     }}
   >
-    <Private.Screen name={ROUTES.HOME} component={Pages.Home} />
-    <Private.Screen name={ROUTES.TRADE} component={Pages.Trade} />
+    <Private.Screen name={ROUTES.HOME_TAB} component={HomeStack} />
+    <Private.Screen name={ROUTES.TRADE_TAB} component={Pages.Example} />
+    <Private.Screen name={ROUTES.PORTIFOLIO_TAB} component={Pages.Example} />
   </Private.Navigator>
 );
 

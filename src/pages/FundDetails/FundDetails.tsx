@@ -1,10 +1,10 @@
 import React from 'react';
 import { Title, Wrapper } from './styles';
 
-const Trade: React.FC = () => (
+const FundDetails: React.FC = () => (
   <Wrapper>
-    <Title>Trade</Title>
+    <Title>FundDetails</Title>
   </Wrapper>
 );
 
-export default Trade;
+export default FundDetails;

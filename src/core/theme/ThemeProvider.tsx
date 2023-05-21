@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { themeSelector } from '~/core/stores/theme/slectors';
 import { ThemeProvider, useSelector } from '~/libs';
 
@@ -11,7 +11,7 @@ const ThemeProviderContainer: React.FC<Props> = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Fragment>{children}</Fragment>
+      <>{children}</>
     </ThemeProvider>
   );
 };

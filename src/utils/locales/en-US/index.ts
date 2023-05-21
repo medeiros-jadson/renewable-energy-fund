@@ -21,4 +21,7 @@ export default {
   ok: 'Ok',
   registrationMadeSuccessfully: 'Registration made successfully!',
   userNotFound: 'User not found!',
+  home: 'Home',
+  trade: 'Trade',
+  portifolio: 'Portifolio',
 } as Locales;
