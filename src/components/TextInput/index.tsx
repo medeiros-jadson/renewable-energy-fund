@@ -19,7 +19,10 @@ const TextInput: React.FC<Props> = ({ label, secureTextEntry, ...rest }) => {
         <Input secureTextEntry={isPassword} {...rest} />
 
         {secureTextEntry && (
-          <Icon name="eye" onPress={handleToggleContentVisibility} />
+          <Icon
+            name={isPassword ? 'eye' : 'eyeSlash'}
+            onPress={handleToggleContentVisibility}
+          />
         )}
       </InputWrapper>
     </Wrapper>
