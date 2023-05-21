@@ -50,6 +50,6 @@ export const themeFormatter = (rawTheme: any): ThemeType => {
 
 export const getTheme =
   (themeProp: Flatten<ThemeType>) =>
-  ({ theme }: ThemeProps): string | number | null => {
-    return lodash.get(theme, themeProp) || null;
+  ({ theme }: ThemeProps): string | undefined => {
+    return lodash.get(theme, themeProp);
   };

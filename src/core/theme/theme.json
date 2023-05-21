@@ -43,35 +43,35 @@
       "type": "spacing"
     },
     "xxs": {
-      "value": 2,
+      "value": 3,
       "type": "spacing"
     },
     "xs": {
-      "value": 4,
+      "value": 5,
       "type": "spacing"
     },
     "sm": {
-      "value": 8,
+      "value": 7,
       "type": "spacing"
     },
     "md": {
-      "value": 16,
+      "value": 10,
       "type": "spacing"
     },
     "lg": {
-      "value": 24,
+      "value": 15,
       "type": "spacing"
     },
     "xl": {
-      "value": 32,
+      "value": 25,
       "type": "spacing"
     },
     "xxl": {
-      "value": 48,
+      "value": 28,
       "type": "spacing"
     },
     "max": {
-      "value": 64,
+      "value": 72,
       "type": "spacing"
     }
   },
