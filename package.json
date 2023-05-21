@@ -25,6 +25,7 @@
     "@react-navigation/native-stack": "^6.9.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/lodash": "^4.14.194",
+    "i18n-js": "^4.2.3",
     "lodash": "^4.17.21",
     "react": "18.2.0",
     "react-native": "0.71.8",

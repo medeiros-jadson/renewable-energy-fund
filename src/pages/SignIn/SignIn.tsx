@@ -1,9 +1,10 @@
 import React from 'react';
+import { translate } from '~/utils';
 import { Title, Wrapper } from './styles';
 
 const SignIn: React.FC = () => (
   <Wrapper>
-    <Title>SignIn</Title>
+    <Title>{translate('signIn')}</Title>
   </Wrapper>
 );
 
