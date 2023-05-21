@@ -7,4 +7,15 @@ declare type Locales = {
   dontHaveAccount: string;
   signUp: string;
   here: string;
+  createYourAccount: string;
+  firstName: string;
+  firstNamePlaceholder: string;
+  lastName: string;
+  lastNamePlaceholder: string;
+  alreadyHaveAccount: string;
+  createAccount: string;
+  iAmOverEighteen: string;
+  termsOfService: string;
+  and: string;
+  privacyPolicy: string;
 };

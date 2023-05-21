@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '~/core/navigation';
 import {
   ContentWrapper,
   Icon,
@@ -22,27 +23,35 @@ const PageHeader: React.FC<Props> = ({
   subtitle,
   showBackButton,
   suppressTitle,
-}) => (
-  <Wrapper>
-    <IconWrapper>{showBackButton && <Icon name="arrowLeft" />}</IconWrapper>
+}) => {
+  const { navigation } = useNavigation();
 
-    {suppressTitle && (
-      <SuppressWrapper>
-        <SuppressBadge />
-        <SuppressBadge />
-        <SuppressBadge />
-      </SuppressWrapper>
-    )}
+  return (
+    <Wrapper>
+      <IconWrapper>
+        {showBackButton && (
+          <Icon name="arrowLeft" onPress={navigation.goBack} />
+        )}
+      </IconWrapper>
 
-    {!suppressTitle && (
-      <ContentWrapper>
-        <Title>{title}</Title>
-        {subtitle && <Subtitle>{subtitle}</Subtitle>}
-      </ContentWrapper>
-    )}
+      {suppressTitle && (
+        <SuppressWrapper>
+          <SuppressBadge />
+          <SuppressBadge />
+          <SuppressBadge />
+        </SuppressWrapper>
+      )}
 
-    <IconWrapper />
-  </Wrapper>
-);
+      {!suppressTitle && (
+        <ContentWrapper>
+          <Title>{title}</Title>
+          {subtitle && <Subtitle>{subtitle}</Subtitle>}
+        </ContentWrapper>
+      )}
+
+      <IconWrapper />
+    </Wrapper>
+  );
+};
 
 export default PageHeader;
