@@ -28,7 +28,6 @@ const SignInContainer: React.FC = () => {
           okText: translate('ok'),
           onPressOk: () => {
             navigation.goBack();
-            navigation.replace(routes.SIGN_IN);
           },
         });
         return;

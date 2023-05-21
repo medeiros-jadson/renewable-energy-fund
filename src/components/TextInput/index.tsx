@@ -16,7 +16,7 @@ const TextInput: React.FC<Props> = ({ label, secureTextEntry, ...rest }) => {
     <Wrapper>
       <Label>{label}</Label>
       <InputWrapper>
-        <Input secureTextEntry={isPassword} {...rest} />
+        <Input autoCapitalize="none" secureTextEntry={isPassword} {...rest} />
 
         {secureTextEntry && (
           <Icon
