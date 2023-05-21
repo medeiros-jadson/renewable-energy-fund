@@ -19,4 +19,5 @@ declare type SvgSet = {
   trade: Svg;
   pie: Svg;
   info: Svg;
+  check: Svg;
 };

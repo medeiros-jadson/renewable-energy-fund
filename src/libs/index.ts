@@ -3,6 +3,7 @@ export {
   default as styled,
   ThemeContext,
   ThemeProvider,
+  css,
 } from 'styled-components/native';
 export { Provider, useDispatch, useSelector } from 'react-redux';
 export { persistStore } from 'redux-persist';
