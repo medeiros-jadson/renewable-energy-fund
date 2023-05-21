@@ -21,7 +21,7 @@ const Home: React.FC<Props> = ({ onFundPress }) => {
   const getHeader = (): JSX.Element => <Header />;
 
   return (
-    <Wrapper customHeaderComponent={getHeader()}>
+    <Wrapper fullWidth customHeaderComponent={getHeader()}>
       <FundsSection>
         <FundsTitle>Funds</FundsTitle>
         <FundsCardWrapper>

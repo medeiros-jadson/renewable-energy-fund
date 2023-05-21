@@ -25,4 +25,5 @@ declare type SvgSet = {
   windGraph: Svg;
   sunGraph: Svg;
   grassGraph: Svg;
+  largeGraph: Svg;
 };

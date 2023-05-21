@@ -8,3 +8,5 @@ export { default as KeyboardAvoidingView } from './KeyboardAvoidingView';
 export { default as BottomTab } from './BottomTab';
 export { default as HomeHeader } from './HomeHeader';
 export { default as FundCard } from './FundCard';
+export { default as InfoStat } from './InfoStat';
+export { default as ImageCard } from './ImageCard';

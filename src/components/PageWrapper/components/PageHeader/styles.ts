@@ -12,7 +12,9 @@ const text900 = getTheme('colors.text.900');
 const background900 = getTheme('colors.background.900');
 const borderWidthXxs = getTheme('borderWidth.xxs');
 const borderRadiusCircle = getTheme('borderRadius.circle');
+const fontWeightsRegular = getTheme('fontWeights.regular');
 const fontWeightsSemiBold = getTheme('fontWeights.semiBold');
+const fontSizesSm = getTheme('fontSizes.sm');
 const fontSizesLg = getTheme('fontSizes.lg');
 
 export const Wrapper = styled.View`
@@ -46,8 +48,8 @@ export const Title = styled.Text`
 `;
 
 export const Subtitle = styled.Text`
-  font-weight: ${fontWeightsSemiBold};
-  font-size: ${fontSizesLg}px;
+  font-weight: ${fontWeightsRegular};
+  font-size: ${fontSizesSm}px;
   color: ${text700};
 `;
 

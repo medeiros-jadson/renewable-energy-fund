@@ -8,6 +8,7 @@ type Props = {
   children?: React.ReactNode;
   title?: string;
   subtitle?: string;
+  fullWidth?: boolean;
   showBackButton?: boolean;
   suppressTitle?: boolean;
   customHeaderComponent?: React.ReactNode;
@@ -17,6 +18,7 @@ const PageWrapper: React.FC<Props> = ({
   children,
   title = '',
   subtitle = '',
+  fullWidth = false,
   showBackButton = false,
   suppressTitle = false,
   customHeaderComponent,
@@ -31,7 +33,7 @@ const PageWrapper: React.FC<Props> = ({
           suppressTitle={suppressTitle}
         />
       )}
-      <ContentWrapper>{children}</ContentWrapper>
+      <ContentWrapper fullWidth={fullWidth}>{children}</ContentWrapper>
     </ScrollView>
   </Wrapper>
 );

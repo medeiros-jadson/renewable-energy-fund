@@ -25,6 +25,8 @@ export const Header = styled(HomeHeader)``;
 
 export const FundsSection = styled.View`
   flex-direction: column;
+  margin-top: ${spacingXl}px;
+  margin-left: ${spacingXl}px;
   margin-bottom: ${spacingXl}px;
 `;
 
@@ -45,6 +47,7 @@ export const FundsCardWrapper = styled.ScrollView.attrs({
 })``;
 
 export const Banner = styled.View`
+  margin: 0 ${spacingXl}px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
