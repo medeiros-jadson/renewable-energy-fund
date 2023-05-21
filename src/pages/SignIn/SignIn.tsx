@@ -1,10 +1,47 @@
 import React from 'react';
 import { translate } from '~/utils';
-import { Title, Wrapper } from './styles';
+import {
+  BottomText,
+  BottomTextWrapper,
+  Button,
+  TextInput,
+  TextInputWrapper,
+  Title,
+  Wrapper,
+} from './styles';
 
-const SignIn: React.FC = () => (
+type Props = {
+  goToSignUp: () => void;
+};
+
+const SignIn: React.FC<Props> = ({ goToSignUp }) => (
   <Wrapper>
-    <Title>{translate('signIn')}</Title>
+    <Title>{translate('login')}</Title>
+
+    <TextInputWrapper>
+      <TextInput
+        label={translate('email')}
+        placeholder={translate('emailPlaceholder')}
+      />
+    </TextInputWrapper>
+
+    <TextInputWrapper>
+      <TextInput
+        label={translate('password')}
+        placeholder={translate('passwordPlaceholder')}
+        secureTextEntry
+      />
+    </TextInputWrapper>
+
+    <Button type="primary" label={translate('login')} />
+
+    <BottomTextWrapper>
+      <BottomText>{translate('dontHaveAccount')}</BottomText>
+      <BottomText underline onPress={goToSignUp}>
+        {translate('signUp')}
+      </BottomText>
+      <BottomText>{translate('here')}</BottomText>
+    </BottomTextWrapper>
   </Wrapper>
 );
 
