@@ -18,4 +18,5 @@ export default {
   termsOfService: 'Terms of Service',
   and: 'and',
   privacyPolicy: 'Privacy policy',
+  ok: 'Ok',
 } as Locales;

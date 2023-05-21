@@ -11,3 +11,7 @@ export enum ROUTES {
   HOME = 'HOME',
   TRADE = 'TRADE',
 }
+
+export enum MODALS {
+  DEFAULT = 'DEFAULT',
+}

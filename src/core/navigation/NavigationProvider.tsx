@@ -7,7 +7,8 @@ import {
   ThemeContext,
   createNativeStackNavigator,
 } from '~/libs';
-import { ROUTES_STACKS } from './enums';
+import * as Pages from '~/pages';
+import { MODALS, ROUTES_STACKS } from './enums';
 import { PrivateStack, PublicStack } from './routes';
 import { getActiveRouteName } from './services';
 
@@ -63,6 +64,7 @@ const NavigationProvider: React.FC<Props> = ({ setNavigator }) => {
           name={ROUTES_STACKS.PRIVATE}
           component={PrivateStack}
         />
+        <MainStack.Screen name={MODALS.DEFAULT} component={Pages.Modal} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

@@ -18,4 +18,5 @@ declare type Locales = {
   termsOfService: string;
   and: string;
   privacyPolicy: string;
+  ok: string;
 };

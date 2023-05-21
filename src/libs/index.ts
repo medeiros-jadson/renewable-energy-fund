@@ -46,3 +46,8 @@ export { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 export { I18n, Locales, MissingTranslation, Pluralization } from 'i18n-js';
 export { SvgXml } from 'react-native-svg';
 export { Formik as FormBehavior, useFormikContext, FormikProps } from 'formik';
+export {
+  getStatusBarHeight,
+  getBottomSpace,
+  isIphoneX,
+} from 'react-native-iphone-x-helper';
