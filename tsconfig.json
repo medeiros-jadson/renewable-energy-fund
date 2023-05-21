@@ -54,8 +54,8 @@
       "~/core/*": ["src/core/*"],
       "~/libs": ["src/libs"],
       "~/pages": ["src/pages"],
-      "~/utils": ["src/utils"],
-    },
+      "~/utils": ["src/utils"]
+    }
   },
   "types": ["src/utils/types/*", "src/core/navigation/types/*"],
   "include": [
@@ -72,6 +72,6 @@
   "exclude": [
     "node_modules",
     "e2e",
-    "__tests__/", // exclude test files
+    "__tests__/" // exclude test files
   ]
 }
