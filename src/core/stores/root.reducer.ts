@@ -1,8 +1,9 @@
 import { AnyAction, Reducer, combineReducers } from '~/libs';
 
+import theme from './theme/slices';
 import user from './user/slices';
 
-const combinedReducers = combineReducers({ user });
+const combinedReducers = combineReducers({ user, theme });
 
 type RootState = ReturnType<typeof combinedReducers>;
 

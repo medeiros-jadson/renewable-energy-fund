@@ -1,0 +1,16 @@
+export enum THEME_TYPE {
+  SIZING = 'sizing',
+  SPACING = 'spacing',
+  BORDER_WIDTH = 'borderWidth',
+  BORDER_RADIUS = 'borderRadius',
+  OPACITY = 'opacity',
+  FONT_WEIGHTS = 'fontWeights',
+  FONT_FAMILIES = 'fontFamilies',
+  LINE_HEIGHTS = 'lineHeights',
+  FONT_SIZES = 'fontSizes',
+  LETTER_SPACING = 'letterSpacing',
+  COLOR = 'color',
+  BOX_SHADOW = 'boxShadow',
+  TEXT_CASE = 'textCase',
+  TEXT_DECORATION = 'textDecoration',
+}

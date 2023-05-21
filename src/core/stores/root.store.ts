@@ -1,3 +1,4 @@
+import { ThemeType } from '~/core/theme';
 import {
   Action,
   Store,
@@ -8,7 +9,7 @@ import {
 } from '~/libs';
 import rootReducer from './root.reducer';
 
-export const AppStore: Store<ApplicationState> = configureStore({
+export const AppStore: Store<ApplicationState<ThemeType>> = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
@@ -19,7 +20,7 @@ export const AppStore: Store<ApplicationState> = configureStore({
 
 export declare type AppState = ReturnType<typeof AppStore.getState>;
 export declare type ThunkAppDispatch = ThunkDispatch<
-  ApplicationState,
+  ApplicationState<ThemeType>,
   void,
   Action
 >;

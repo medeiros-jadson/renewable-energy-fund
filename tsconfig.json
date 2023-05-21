@@ -51,7 +51,7 @@
     "paths": {
       "*": ["src/utils/types/*.ts"],
       "~/components": ["src/components"],
-      "~/core": ["src/core"],
+      "~/core/*": ["src/core/*"],
       "~/libs": ["src/libs"],
       "~/scenes": ["src/scenes"],
       "~/utils": ["src/utils"],
