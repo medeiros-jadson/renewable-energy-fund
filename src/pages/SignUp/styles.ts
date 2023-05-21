@@ -5,15 +5,17 @@ import {
   TextInput as TextInputBase,
 } from '~/components';
 import { getTheme } from '~/core/theme';
-import { styled } from '~/libs';
+import { css, styled } from '~/libs';
 
 type Props = {
   underline?: boolean;
   black?: boolean;
+  red?: boolean;
 };
 
 const text500 = getTheme('colors.text.500');
 const text900 = getTheme('colors.text.900');
+const danger300 = getTheme('colors.danger.300');
 const fontWeightsRegular = getTheme('fontWeights.regular');
 const fontWeightsSemiBold = getTheme('fontWeights.semiBold');
 const fontSizesXs = getTheme('fontSizes.xs');
@@ -52,12 +54,24 @@ export const BottomTextWrapper = styled.View`
 
 export const BottomText = styled.Text<Props>`
   text-align: center;
-  color: ${(props) => (props.black ? text900 : text500)};
+  color: ${text500};
   font-weight: ${fontWeightsRegular};
   font-size: ${fontSizesXs}px;
   line-height: ${fontSizesMd}px;
   margin-left: 4px;
   text-decoration: ${(props) => (props.underline ? 'underline' : 'none')};
+
+  ${(props) =>
+    props.black &&
+    css`
+      color: ${text900};
+    `};
+
+  ${(props) =>
+    props.red &&
+    css`
+      color: ${danger300};
+    `};
 `;
 
 export const Checkbox = styled(CheckboxBase)``;

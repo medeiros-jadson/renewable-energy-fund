@@ -4,14 +4,16 @@ import {
   TextInput as TextInputBase,
 } from '~/components';
 import { getTheme } from '~/core/theme';
-import { styled } from '~/libs';
+import { css, styled } from '~/libs';
 
 type Props = {
   underline?: boolean;
+  red?: boolean;
 };
 
 const text500 = getTheme('colors.text.500');
 const text900 = getTheme('colors.text.900');
+const danger300 = getTheme('colors.danger.300');
 const fontWeightsRegular = getTheme('fontWeights.regular');
 const fontWeightsSemiBold = getTheme('fontWeights.semiBold');
 const fontSizesXs = getTheme('fontSizes.xs');
@@ -56,4 +58,10 @@ export const BottomText = styled.Text<Props>`
   margin-top: ${spacingMd}px;
   margin-left: 4px;
   text-decoration: ${(props) => (props.underline ? 'underline' : 'none')};
+
+  ${(props) =>
+    props.red &&
+    css`
+      color: ${danger300};
+    `};
 `;

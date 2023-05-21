@@ -16,6 +16,8 @@ const borderRadiusXs = getTheme('borderRadius.xs');
 const fontWeightsMedium = getTheme('fontWeights.medium');
 const fontSizesMd = getTheme('fontSizes.md');
 const fontSizesXl = getTheme('fontSizes.xl');
+const opacityDisabled = getTheme('opacity.disabled');
+const opacityOpaque = getTheme('opacity.opaque');
 
 const background = {
   primary: primary500,
@@ -42,6 +44,7 @@ export const Wrapper = styled.TouchableOpacity<Props>`
   background-color: ${(props) => background[props.type!]};
   border: ${borderWidthXxs}px solid ${(props) => border[props.type!]};
   border-radius: ${borderRadiusXs}px;
+  opacity: ${(props) => (props.disabled ? opacityDisabled : opacityOpaque)};
 `;
 
 export const Text = styled.Text<Props>`

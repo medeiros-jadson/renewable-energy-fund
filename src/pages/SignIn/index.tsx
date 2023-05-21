@@ -1,5 +1,7 @@
 import React from 'react';
+import { FormContainer } from '~/components';
 import { useNavigation } from '~/core/navigation';
+import { FormValues, initialValues, validationSchema } from './form';
 import SignIn from './SignIn';
 
 const SignInContainer: React.FC = () => {
@@ -7,7 +9,20 @@ const SignInContainer: React.FC = () => {
 
   const goToSignUp = (): void => navigation.navigate(routes.SIGN_UP);
 
-  return <SignIn goToSignUp={goToSignUp} />;
+  const onSubmit = (values: FormValues): void => {
+    console.log(values);
+  };
+
+  return (
+    <FormContainer
+      enableReinitialize
+      onSubmit={onSubmit}
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+    >
+      <SignIn goToSignUp={goToSignUp} />
+    </FormContainer>
+  );
 };
 
 export default SignInContainer;

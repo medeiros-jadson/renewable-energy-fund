@@ -21,7 +21,7 @@ export const Wrapper = styled.View`
   flex-direction: row;
 `;
 
-export const Box = styled.View<Props>`
+export const Box = styled.TouchableOpacity<Props>`
   width: 20px;
   height: 20px;
   border: ${borderWidthSm}px solid ${background900};
