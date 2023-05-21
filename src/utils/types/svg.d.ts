@@ -22,4 +22,7 @@ declare type SvgSet = {
   info: Svg;
   check: Svg;
   coin: Svg;
+  windGraph: Svg;
+  sunGraph: Svg;
+  grassGraph: Svg;
 };

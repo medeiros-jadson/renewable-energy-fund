@@ -7,3 +7,4 @@ export { default as FormContainer } from './FormContainer';
 export { default as KeyboardAvoidingView } from './KeyboardAvoidingView';
 export { default as BottomTab } from './BottomTab';
 export { default as HomeHeader } from './HomeHeader';
+export { default as FundCard } from './FundCard';
