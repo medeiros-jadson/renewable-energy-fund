@@ -1,10 +1,14 @@
 import React from 'react';
-import { Title, Wrapper } from './styles';
+import { Header, Title, Wrapper } from './styles';
 
-const Home: React.FC = () => (
-  <Wrapper>
-    <Title>Home</Title>
-  </Wrapper>
-);
+const Home: React.FC = () => {
+  const getHeader = (): JSX.Element => <Header />;
+
+  return (
+    <Wrapper customHeaderComponent={getHeader()}>
+      <Title>Home</Title>
+    </Wrapper>
+  );
+};
 
 export default Home;

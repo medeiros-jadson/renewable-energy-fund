@@ -21,4 +21,5 @@ declare type SvgSet = {
   pie: Svg;
   info: Svg;
   check: Svg;
+  coin: Svg;
 };
