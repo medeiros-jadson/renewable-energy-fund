@@ -49,17 +49,15 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "paths": {
-      "*": ["src/utils/types/*.ts"],
+      "*": ["src/utils/types/*.ts", "src/core/navigation/types/*.ts"],
       "~/components": ["src/components"],
       "~/core/*": ["src/core/*"],
       "~/libs": ["src/libs"],
-      "~/scenes": ["src/scenes"],
+      "~/pages": ["src/pages"],
       "~/utils": ["src/utils"],
     },
   },
-  "types": [
-    "src/utils/types/*"
-  ],
+  "types": ["src/utils/types/*", "src/core/navigation/types/*"],
   "include": [
     ".eslintrc.js",
     ".lintstagedrc.js",

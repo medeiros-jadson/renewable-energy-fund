@@ -1,0 +1,13 @@
+export enum ROUTES_STACKS {
+  PUBLIC = 'STACK_PUBLIC',
+  PRIVATE = 'STACK_PRIVATE',
+}
+
+export enum ROUTES {
+  // PUBLIC ROUTES
+  SIGN_IN = 'SIGN_IN',
+  SIGN_UP = 'SIGN_UP',
+  // PRIVATE ROUTES
+  HOME = 'HOME',
+  TRADE = 'TRADE',
+}

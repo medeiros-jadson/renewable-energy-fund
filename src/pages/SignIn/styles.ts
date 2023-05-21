@@ -1,6 +1,3 @@
----
-to: src/pages/<%= h.changeCase.pascal(name) %>/styles.ts
----
 import { getTheme } from '~/core/theme';
 import { styled } from '~/libs';
 
