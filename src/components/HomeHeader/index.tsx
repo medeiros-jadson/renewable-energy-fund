@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { themeSelector } from '~/core/stores/theme/slectors';
+import { themeSelector } from '~/core/stores/theme/selectors';
 import {
   Badge,
   BadgeLabel,
