@@ -24,10 +24,10 @@ const NavigationProvider: React.FC<Props> = ({ setNavigator }) => {
   const themeContext = {
     dark: false,
     colors: {
+      background: colors.background[100],
       primary: colors.primary[500],
-      background: 'transparent',
-      card: colors.primary[500],
-      text: colors.text[500],
+      card: colors.background[100],
+      text: colors.text[900],
       border: colors.primary[500],
       notification: colors.primary[500],
     },
@@ -52,7 +52,12 @@ const NavigationProvider: React.FC<Props> = ({ setNavigator }) => {
       theme={themeContext}
       onStateChange={onNavigationStateChange}
     >
-      <MainStack.Navigator initialRouteName={initialRoute}>
+      <MainStack.Navigator
+        initialRouteName={initialRoute}
+        screenOptions={{
+          header: () => <></>,
+        }}
+      >
         <MainStack.Screen name={ROUTES_STACKS.PUBLIC} component={PublicStack} />
         <MainStack.Screen
           name={ROUTES_STACKS.PRIVATE}
