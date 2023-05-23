@@ -19,7 +19,7 @@ npm install -g react-native-cli
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/RenewableEnergyFund.git
+git clone https://github.com/medeiros-jadson/RenewableEnergyFund.git
 ```
 
 2. Navigate into the project directory:
