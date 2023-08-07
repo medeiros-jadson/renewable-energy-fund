@@ -25,7 +25,7 @@
     "@react-navigation/native-stack": "^6.9.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/lodash": "^4.14.194",
-    "formik": "^2.2.9",
+    "formik": "^2.4.3",
     "i18n-js": "^4.2.3",
     "lodash": "^4.17.21",
     "react": "18.2.0",
